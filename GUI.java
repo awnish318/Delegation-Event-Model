@@ -1,9 +1,6 @@
 import java.awt.*;
 import java.awt.event.*;
-import java.applet.Applet.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
+
 
 public class GUI extends Frame implements MouseListener,MouseMotionListener{
    Label l,l1,l2;
@@ -27,8 +24,7 @@ public class GUI extends Frame implements MouseListener,MouseMotionListener{
    }
    public void mouseClicked(MouseEvent e){
    	l.setText("Mouse CLicked");
-   	System.out.println(e.getX()+""+e.getY());
-   	
+   	System.out.println(e.getX()+""+e.getY());	
    }
    public void mouseEntered(MouseEvent e){
    	l.setText("Mouse Entered");
@@ -36,11 +32,9 @@ public class GUI extends Frame implements MouseListener,MouseMotionListener{
    public void mouseexited(MouseEvent e){
    	l2.setText("Mouse exited");
    }
-   
    public void mousePressed(MouseEvent e){
    	l.setText("Mouse Pressed");
    }
-   
    public void mouseReleased(MouseEvent e){
    	l2.setText("Mouse Released");
    }
